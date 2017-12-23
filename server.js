@@ -62,5 +62,6 @@ server.get('/pushsingle', (req, res) => {
     });
 });
 
-server.listen(4444);
-console.log('server started at port 4444...');
+const port = process.env.PORT || 4444;
+server.listen(port);
+console.log('server started at port ' + port);
