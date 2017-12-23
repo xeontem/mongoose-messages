@@ -5,7 +5,7 @@ const msgs = require('./messages');
 const Schema = DB.Schema;
 const msgSchema = {
     body: String,
-    // title: String
+    title: String
 }
 
 const DBModel = DB.model('messages', new Schema(msgSchema));
