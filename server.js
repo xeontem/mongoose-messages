@@ -13,7 +13,7 @@ const DBModel = DB.model('messages', new Schema(msgSchema));
 
 DB.connect('mongodb://admin:admin@ds035985.mlab.com:35985/messages', {useMongoClient: true});
 DB.connection.on('connected', x => {
-    console.log('connected to Mlab DB');
+    console.log('connect to Mlab DB success!!!!!');
 })
 
 DB.connection.on('error', x => {
